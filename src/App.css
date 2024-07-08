@@ -1,0 +1,121 @@
+.container_head{
+  color: green;
+}
+
+.container_paragraph{
+  font-size: 20px;
+  background-color: antiquewhite;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+.div_element{
+  padding: 10px;
+  border: 1px solid black;
+  margin: 20px;
+  width: 200px;
+  height: 100px;
+}
+.positioning{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  background-color: aliceblue;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.backgrounds{
+  background: url("https://picsum.photos/200/300");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  background-attachment: fixed;
+  margin-bottom: 20px;
+}
+
+.btn_save{
+  padding: 6px 10px;
+  outline: none;
+  border: none;
+  background-color: aqua;
+  border: 1px solid aqua;
+  border-radius: 7px;
+}
+
+input{
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+input[type="text"]:focus{
+  background-color: dodgerblue;
+  box-shadow: 0 0 0.5 dodgerblue;
+}
+.flex_container{
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 300px; 
+  background-color: antiquewhite;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.child{
+  flex: 1; 
+  height: 150px;
+  margin: 10px; 
+  background-color: saddlebrown;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto; 
+  gap: 10px; 
+}
+
+.item {
+  padding: 20px;
+  background-color: antiquewhite;
+  color: black;
+  text-align: center;
+}
+
+.item1 {
+  grid-column: 1 / span 1; 
+  grid-row: 1 / span 2; 
+}
+
+.item4 {
+  grid-column: 1 / span 3; 
+  grid-row: 2 / span 1; 
+}
+
+li:hover{
+ color: red;
+}
+
+li:first-child{
+  text-decoration: underline;
+  color: blue;
+}
+
+.before_after>p::before{
+content: "Hello";
+}
+.before_after>h3::after{
+content: "Nagaraj";
+}
